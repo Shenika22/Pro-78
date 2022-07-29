@@ -1,0 +1,15 @@
+<TextInput
+style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+placeholder = "Enter you latitude"
+placeholderTextColor = "#ffff#000000"
+onChangeText={(text)=>{
+this.setState({
+latitude: text
+})
+}}
+/>
+
+const {longitude, latitude} = this.state;
+const path = 'https://virtualsky.lco.global/embed/index/html?longitude=
+s {longitude} & latitude = ${latitude}&connstellations=trueconnstellationslabels=s
+trueshowstarlabels=true&gridlines_az=true&live=true&projection=stereo&showdate=falseshowposition=false
